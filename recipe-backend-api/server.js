@@ -3,6 +3,9 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
 const Recipes = require('./models/recipeschema')
+const dotenv = require('dotenv')
+
+dotenv.config()
 
 app.use(express.json())
 app.use(cors())
@@ -31,7 +34,5 @@ app.listen(3000, () => {
     console.log('listening...')
 })
 
-mongoose.connect('mongodb://localhost:27017/recipemern')
-mongoose.connection.once('open', () => {
-    console.log('connected to mongod...')
-})
+mongoose.connect(process.env.DatabaseAccess)
+console.log("Connected to Atlas")
