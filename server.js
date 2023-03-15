@@ -6,7 +6,7 @@ const app = express()
 const Recipes = require('./models/recipeschema')
 
 
-const mongoURI = process.env.MONGODB
+const mongoURI = process.env.MONGODB_URI
 const db = mongoose.connection
 
 app.use(express.json())
