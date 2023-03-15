@@ -3,9 +3,11 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
 const Recipes = require('./models/recipeschema')
-const dotenv = require('dotenv')
 
-dotenv.config()
+require('dotenv').config()
+
+const mongoURI = process.env.MONGODB
+const db = mongoose.connection
 
 app.use(express.json())
 app.use(cors())
@@ -34,5 +36,10 @@ app.listen(3000, () => {
     console.log('listening...')
 })
 
-mongoose.connect(process.env.DatabaseAccess)
-console.log("Connected to Atlas")
+
+
+
+mongoose.connect(mongoURI)
+.then(()=>{
+    console.log("Connected to Atlas")
+})
