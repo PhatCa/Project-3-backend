@@ -1,10 +1,10 @@
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
 const Recipes = require('./models/recipeschema')
 
-require('dotenv').config()
 
 const mongoURI = process.env.MONGODB
 const db = mongoose.connection
