@@ -1,11 +1,11 @@
 
-# Manga Ecom
+# Recipe Sit
 
-this site is fore people to veiw and buy manga as well as sell them on our site.
+this site is for people to veiw, add, delete and edit recipes
 
 ## User Story
 
-- As a user i want to be able to check the rarity of this manga what is the price of this manga and what other kinds of manga i might like based of my interest
+As a user I want to be able to delete recipes, see a picture of the recipe and add new recipes
 
 ## Wire Framework
 
@@ -31,7 +31,9 @@ Install my-project with npm
 ## Authors
 
 - phat phi ca
-- bailey rechkemmer
+- max dickinson
+- sydney clark
+- dominic mena
 
 ## live link to project
 
