@@ -1,40 +1,51 @@
 
-# Recipe Sit
+# Recipe Website
 
-this site is for people to veiw, add, delete and edit recipes
+This site is for people to view and create or delete their recipe online.
 
 ## User Story
 
-As a user I want to be able to delete recipes, see a picture of the recipe and add new recipes
+- As a user I want to be able to check available recipe on the site and share my own recipe on there, If I made a mistake I would be either delete the post or edit the post
 
-## Wire Framework
-
-
+## Our Story
+- We utilized nested components (index > card > buttons) and approached it by building a wireframe to agree on a layout, set a schedule of milestones to hit each day and divided the work by backend/frontend and then by component.  At first it was a problem getting the edit button to render changes on the browser on one click but we realized there was a missing prop needed to update the page.
 
 ## Installation
 
-Install my-project with npm
+Install my-project 
 
+Front end
 ```bash
-  npm init
-  npm install express
-  npm install method-override
-  npm install ejs
-  npm install mongoose
-  npm install bcrypt
-  npm install express-session
-  npm install env
-  npm install dotenv
-  npm install conncect-mongo
+    "axios": "^1.3.4",
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
 ```
+
+Back end 
+```bash
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1"
+```
+
     
 ## Authors
 
-- phat phi ca
-- max dickinson
-- sydney clark
-- dominic mena
+- Phat Phi Ca
+- Max Dickinson
+- Dominic Mena
+- Sydney Clark
+
+
 
 ## live link to project
 
-
+Front end
+https://recipefrontend.onrender.com/
+Back end
+https://recipebackend-oe7c.onrender.com/recipes
